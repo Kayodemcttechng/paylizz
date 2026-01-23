@@ -195,7 +195,7 @@
 
 .about-section{
     background-color: #ffffff;
-    padding: 40px 40px;
+    padding: 40px 10px;
     align-items: center;
 }
 
@@ -231,7 +231,7 @@
 
 .mission-section{
     background-color:#edc22d;
-    padding: 40px 40px;
+    padding: 40px 10px;
     align-items: center;}
 
     .mission-box{
@@ -251,7 +251,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 40px 40px;
+    padding: 40px 15px;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -262,7 +262,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 40px 40px;
+    padding: 40px 15px;
     margin: 0 auto;
     line-height: 1.6;
 }
@@ -565,10 +565,12 @@
     .about {
         flex-direction: column;
         padding: 10px;
+        width: 100%;
     }
 
     .about-img {
-        width: 100%;
+        width:100%;
+        max-width: 400px;
         height: auto;
     }
 
