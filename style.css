@@ -72,6 +72,21 @@
     background-image: linear-gradient(to top, blue 0%, purple 100%);
 }
 
+.hambugger{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+    cursor: pointer;
+}
+.hambugger .bar {
+  width: 15px;
+  height: 1px;
+  background: #111;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
 .hero{
     background-image: url(assets/paylizz-hero.jpg);background-size: cover;
     display: flex;
@@ -610,6 +625,53 @@
 }
 
 @media (max-width: 600px) {
+
+    .logo{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+#mobile_menu{
+    padding-right: 5px;
+}
+    .hamburger {
+    display: flex;
+    padding-right: 5px;
+  }
+
+  .hambugger .bar {
+  width: 24px;
+  height: 2px;
+  background: #111;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+   .navbar_menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .navbar_menu.active {
+    display: flex;
+  }
+
+  .nav_btn {
+    display: none;
+  }
+}
+
     .hero{
         height:auto;
         min-height: 500px;
@@ -678,6 +740,4 @@
     display: flex;
     flex-direction: column;
     padding: 10px 10px;
-}
-    
 }
