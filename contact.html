@@ -1,39 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | PayLizz-Royale Solutions Limited</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contact-section">
-    <div class="contact-box">
-        <img class="contact-image" src="assets/palizzimg.jpg">
-      
-      <div class="contact-form">
-        <h1>Get In Touch</h1>
-        <form>
-          <div class="formsec-1">
-            <input class="name" type="text"  placeholder="Enter your first name">
-            <input class="name" type="text"  placeholder="Enter your last name">
-        </div>
-         <div class="formsec-1">
-            <input class="name" type="email" placeholder="Enter your email address">
-            <input class="name" type="number"  placeholder="Enter your phone number">
-          </div>
-          <select id="contact-form-issue">
-            <option value="CAC Registrations">CAC Registration</option>
-            <option value="CAC Registrations">Graphics Design & Prints</option>
-            <option value="CAC Registrations">NIN Isssues</option>
-            <option value="CAC Registrations">Educational Consultancy</option>
-            <option value="CAC Registrations">Property Enquiries</option>
-            <option value="CAC Registrations">HR & Recruitment Services</option>
-          </select>
-          <textarea class="message" placeholder="Enter your inquiry"></textarea>
-          <button class="contact-submit-button">Submit</button>
-        </form>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="navbar_container">
+    <img class="logo" src="assets/paylizz-logo.png" alt="logo"/>
+    <div class="hambugger" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar_menu">
+      <li class="menu_list"><a href="/">Home</a></li>
+      <li class="menu_list"><a href="/about.html">About</a></li>
+      <li class="menu_list"><a href="/contact.html">Contact</a></li>
+      <li class="menu_list"><a href="/services.html">Services</a></li>
+      <li class="menu_list"><a href="/">Our Blog</a></li>
+    </ul>
+    <button class="nav_btn">Get a Quote</button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<div class="hero hero-contact">
+  <div class="hero_container">
+    <div class="hero_text">
+      <span class="hero-keyword">We’d Love to Hear From You</span>
+      <h1>Get In Touch with <span class="hero-special-text">PayLizz-Royale</span></h1>
+      <p>Whether you have questions about our services, need guidance, or want to start a project, our team is ready to assist you. Fill out the form below or use our contact info to reach us directly.</p>
     </div>
   </div>
 </div>
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="contact-section">
+  <div class="contact-box">
+    
+    <!-- Form -->
+    <div class="contact-form">
+      <h1>Send Us a Message</h1>
+      <form id="contact-form" action="#" method="POST">
+        <input class="name" type="text" name="name" placeholder="Your Name" required>
+        <input class="email" type="email" name="email" placeholder="Your Email" required>
+        <input class="subject" type="text" name="subject" placeholder="Subject" required>
+        <textarea class="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="contact-submit-button">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong> 123 Business Avenue, Lagos, Nigeria</p>
+      <p><strong>Phone:</strong> +234 801 234 5678</p>
+      <p><strong>Email:</strong> info@paylizz-royale.com</p>
+      <p><strong>Working Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM</p>
+      
+      <!-- Google Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b6f7d0fbf%3A0xabcdef123456!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1670000000000" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-section">
+  <div class="cta-container">
+    <h2>Have Questions?</h2>
+    <p>Reach out to us today and let's discuss how we can help your business thrive.</p>
+    <button class="hero_btn1">Contact Us Now</button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<div class="footer-section">
+  <div class="footer-box">
+    <div class="footer-section1">
+      <img class="logo" src="assets/paylizz-logo.png" alt="logo">
+      <p>We are a multi-service solutions company committed to helping businesses and individuals grow, comply, and succeed. With a strong focus on innovation and strategy, we provide reliable services for long-term growth.</p>
+    </div>
+    <div class="footermenus">
+      <div class="footer-section2">
+        <h2>QUICK LINKS</h2>
+        <ul class="footer-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-section3">
+        <h2>OUR SERVICES</h2>
+        <ul class="footer-services">
+          <li><a href="/">CAC Registrations</a></li>
+          <li><a href="/">NIN Services</a></li>
+          <li><a href="/">Graphics Design & Prints</a></li>
+          <li><a href="/">Education Consultancy</a></li>
+          <li><a href="/">HR & Recruitment</a></li>
+        </ul>
+      </div>
+      <div class="footer-section4">
+        <h2>Our Vision</h2>
+        <p>Partnering with businesses and individuals seeking long-term growth, strategic direction, and meaningful impact in an evolving global landscape.</p>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    (c)2026 PayLizz-Royale Solutions Limited | Designed by MCT Tech Nigeria
+  </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
