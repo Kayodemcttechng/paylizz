@@ -188,7 +188,7 @@
 
 /* ================= ABOUT ================= */
 .about-section {
-  padding: 40px 0px;
+  padding: 40px;
 }
 
 .about {
@@ -196,7 +196,7 @@
   margin: auto;
   display: flex;
   gap: 30px;
-  padding: 40px;
+  padding:40px;
 }
 
 .about-img {
@@ -625,9 +625,14 @@ select {
     width: 100%;
     background: #fff;
     flex-direction: column;
-    padding: 8px 0;
-    gap: 12px;
+    padding: 18px 15px;
+    gap: 22px;
+    font-size: 21px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    align-items: start;
     display: none;
+    font-weight:500;
   }
 
   .navbar_menu.active {
@@ -659,15 +664,17 @@ select {
   .footer-box {
     flex-direction: column;
     grid-template-columns: 1fr;
-    padding: 20px;
-  }
+    padding: 10px;
+    max-width: 1300px;
+    margin: auto;
 
+}
   .about-img {
     width: 100%;
   }
 
    .about-content h1 {
-    font-size: 26px;
+    font-size: 25px;
   }
 
   .hamburger.active .bar:nth-child(2) {
