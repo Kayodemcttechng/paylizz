@@ -666,7 +666,7 @@ select {
     flex-direction: column;
   }
 
-  .about,
+  .about, .about-content,
   .mission-box,
   .services-box,
   .contact-box,
@@ -684,11 +684,7 @@ select {
   width: 100%;
   max-width: 600px;
 }
-.about-content{
-  width: 70%;
-  max-width: 400px;
-}
-  .about-img {
+.about-img {
     width: 100%;
   }
 
