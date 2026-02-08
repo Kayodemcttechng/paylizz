@@ -267,6 +267,8 @@
 
   .about-content p {
     font-size: 14.5px;
+    width: 90%;
+  max-width: 400px;
   }
 
 }
