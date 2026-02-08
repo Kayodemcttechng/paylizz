@@ -188,7 +188,7 @@
 
 /* ================= ABOUT ================= */
 .about-section {
-  padding: 40px;
+  padding: 20px;
 }
 
 .about {
@@ -196,7 +196,7 @@
   margin: auto;
   display: flex;
   gap: 30px;
-  padding:40px;
+  padding:0 30px;
 }
 
 .about-img {
@@ -205,7 +205,7 @@
 }
 
 .about-content {
-  max-width: 600px;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -643,6 +643,15 @@ select {
     display: none;
   }
 
+  .hero {
+  background: url(assets/paylizz-hero.jpg) center/cover no-repeat;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+
   .hero_text h1 {
     font-size: 35px;
     max-width: 350px;
@@ -664,7 +673,7 @@ select {
   .footer-box {
     flex-direction: column;
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding:0 10px;
     max-width: 1300px;
     margin: auto;
 
@@ -676,7 +685,14 @@ select {
    .about-content h1 {
     font-size: 25px;
   }
+.services-title p{
+  padding-bottom: 35px;
+}
 
+  .services-title h1{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
