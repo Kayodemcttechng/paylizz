@@ -7,77 +7,92 @@
 }
 
 /* ================= NAVBAR ================= */
+/* ===== NAVBAR BASE ===== */
 .navbar {
-  background: #fff;
+  background: #ffffff;
   position: sticky;
   top: 0;
-  z-index: 999;
+  width: 100%;
+  z-index: 2000;
   display: flex;
   justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbar_container {
   width: 100%;
   max-width: 1300px;
-  height: 80px;
-  margin: 16px 18px;
+  padding: 0 20px;
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
-/* Logo */
+/* ===== LOGO ===== */
 .logo {
-  width: 150px;
+  width: 140px;
   height: auto;
 }
 
-/* Menu */
+/* ===== DESKTOP MENU ===== */
 .navbar_menu {
   list-style: none;
   display: flex;
   align-items: center;
-}
-
-.menu_list {
-  padding: 0 18px;
+  gap: 32px;
 }
 
 .navbar_menu a {
   text-decoration: none;
-  color: #000;
-  font-size: 18px;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-/* Button */
+.navbar_menu a:hover {
+  color: #5b2be0;
+}
+
+/* ===== BUTTON ===== */
 .nav_btn {
-  width: 120px;
-  height: 45px;
-  background: linear-gradient(to top, blue, purple);
+  padding: 10px 20px;
+  background: linear-gradient(to top, #3b4dff, #7a2fff);
   color: #fff;
   border: none;
+  border-radius: 6px;
+  font-size: 15px;
   cursor: pointer;
-  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hamburger */
+.nav_btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== HAMBURGER ===== */
 .hambugger {
   display: none;
   flex-direction: column;
-  gap: 3px;
+  justify-content: center;
+  gap: 5px;
   cursor: pointer;
+  z-index: 2100;
 }
 
 .hambugger .bar {
-  width: 22px;
-  height: 2px;
+  width: 26px;
+  height: 3px;
   background: #111;
   transition: all 0.3s ease;
 }
 
-/* Hamburger animation */
+/* ===== HAMBURGER ANIMATION ===== */
 .hambugger.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(4px, 4px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hambugger.active .bar:nth-child(2),
@@ -86,7 +101,48 @@
 }
 
 .hambugger.active .bar:nth-child(4) {
-  transform: rotate(-45deg) translate(4px, -4px);
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 900px) {
+  .hambugger {
+    display: flex;
+  }
+
+  .nav_btn {
+    display: none;
+  }
+
+  .navbar_menu {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0;
+    transform: translateY(-120%);
+    transition: transform 0.35s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    z-index: 2000;
+  }
+
+  .navbar_menu.active {
+    transform: translateY(0);
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: left;
+    padding: 14px 0;
+  }
+
+  .navbar_menu a {
+    font-size: 18px;
+  }
 }
 
 /* ================= HERO ================= */
@@ -98,13 +154,7 @@
   align-items: center;
 }
 
-.other-hero {
-  background: url(assets/paylizz-hero.jpg) center/cover no-repeat;
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-}
+
 
 .hero-keyword{
     background-color:#0045ab;
@@ -684,6 +734,8 @@ select {
     align-items: start;
     display: none;
     font-weight:500;
+    transition: all 0.4s ease;
+    z-index: 1000;
   }
 
   .navbar_menu.active {
@@ -740,15 +792,15 @@ select {
     font-size: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  .hamburger.active .bar:nth-child(2) {
+  .hambugger.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hambugger.active .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
 
-.hamburger.active .bar:nth-child(3) {
+.hambugger.active .bar:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
@@ -981,6 +1033,17 @@ select {
 }
 
 /* ====== ABOUT SECTION ====== */
+.other-hero {
+  background: url(assets/paylizz-hero.jpg) center/cover no-repeat;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
 
 .about-section {
   padding: 100px 20px;

@@ -28,11 +28,16 @@
     showTestimonial(currentIndex);
   }, 5000);
 
+  document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.getElementById("mobile-menu");
   const navMenu = document.querySelector(".navbar_menu");
 
-  mobileMenu.addEventListener("click", () =>{
+  if (!mobileMenu || !navMenu) return;
+
+  mobileMenu.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     mobileMenu.classList.toggle("active");
   });
+});
+
 
