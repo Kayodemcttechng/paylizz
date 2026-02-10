@@ -781,11 +781,14 @@ select {
     flex-direction: column;
     grid-template-columns: 1fr;
     width: 100%;
-    max-width: 500px;
-    padding:0 10px;
+    max-width: 700px;
+    padding:0 7px;
     max-width: 1300px;
     margin: auto;
 
+}
+.mission-section{
+  padding: 20px 10px;
 }
 .about{
   padding: 0 10px;
