@@ -23,7 +23,7 @@
   width: 100%;
   max-width: 1300px;
   padding: 0 20px;
-  height: 72px;
+  height: 112px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,7 +239,7 @@
 /* ================= ABOUT ================= */
 /* ===== ABOUT SECTION ===== */
 .about-section {
-  padding: 90px 20px;
+  padding: 50px 20px;
   background: #f9f9f9;
 }
 
@@ -264,6 +264,9 @@
 /* Content */
 .about-content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   
 }
 
@@ -271,13 +274,14 @@
   font-size: 42px;
   text-align: left;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   line-height: 1.2;
   color: #111;
 }
 
 .about-content p {
   font-size: 16px;
+  max-width: 700px;
   text-align: left;
   line-height: 1.9;
   color: #444;
