@@ -238,7 +238,7 @@
 
 /* ===== ABOUT SECTION ===== */
 .about-section {
-  padding: 0px 20px;
+  padding: 40px 20px;
   background: red;
 }
 
@@ -248,6 +248,7 @@
   display: flex;
   align-items: left;
   gap: 60px;
+  padding: 40px 20px;
 }
 
 /* Image */
@@ -256,6 +257,7 @@
   height: 100%;
   max-height: 520px;
   object-fit: cover;
+  margin: auto;
   border-radius: 16px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
@@ -771,10 +773,6 @@ select {
   .hero_btn {
     flex-direction: column;
   }
-
-.about {
-  padding-top: -120px;
-}
   
   .mission-box,
   .services-box,
@@ -789,7 +787,9 @@ select {
     margin: auto;
 
 }
-
+.about{
+  padding: 0 10px;
+}
 .services-title p{
   padding-bottom: 35px;
 }
@@ -827,7 +827,7 @@ select {
 .why-container {
   max-width: 1200px;
   margin: auto;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 
 .why-choose-us h2 {
@@ -850,12 +850,12 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 35px;
-  padding: 30px 17px;
+  padding: 20px 10px;
 }
 
 .why-card {
   background: #fff;
-  padding: 40px 30px;
+  padding: 30px 15px;
   border-radius: 16px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
@@ -1063,7 +1063,7 @@ select {
 .about-container {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
   max-width: 1300px;
   margin: auto;
   flex-wrap: wrap;
@@ -1082,9 +1082,9 @@ select {
 }
 
 .about-content h2 {
-  font-size: 36px;
+  font-size: 33px;
   color: #111;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about-content p {
