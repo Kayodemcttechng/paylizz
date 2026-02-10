@@ -852,8 +852,8 @@ select {
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
-  padding: 20px 10px;
+  gap: 25px;
+  padding: 20px 7px;
 }
 
 .why-card {
@@ -1081,7 +1081,7 @@ select {
 
 .about-content {
   flex: 1;
-  min-width: 400px;
+  max-width: 400px;
 }
 
 .about-content h2 {
