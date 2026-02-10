@@ -236,11 +236,10 @@
   color: #fff;
 }
 
-/* ================= ABOUT ================= */
 /* ===== ABOUT SECTION ===== */
 .about-section {
-  padding: 50px 20px;
-  background: #f9f9f9;
+  padding: 0px 20px;
+  background: red;
 }
 
 .about {
@@ -773,6 +772,9 @@ select {
     flex-direction: column;
   }
 
+.about {
+  padding-top: -120px;
+}
   
   .mission-box,
   .services-box,
@@ -1050,8 +1052,12 @@ select {
 
 
 .about-section {
-  padding: 100px 20px;
+  padding: 50px 15px;
   background: #f9f9f9;
+}
+
+.mission-section {
+  padding: 50px 15px;
 }
 
 .about-container {
