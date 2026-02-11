@@ -323,7 +323,7 @@
   .about-content p {
     font-size: 14.5px;
     width: 90%;
-  max-width: 400px;
+  max-width: 500px;
   }
 
 }
@@ -574,7 +574,7 @@ select {
 .footer-section{
   background-color: #0045ab;
   padding: 40px;
-  height: auto;
+  
 }
 .footer-box {
   max-width: 1400px;
@@ -582,6 +582,7 @@ select {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  padding: 60px;
 }
 
 /* SECTION 1 & 4 */
@@ -661,13 +662,11 @@ select {
 
 /* COPYRIGHT */
 .copyright {
-  margin: 30px;
   padding: 20px;
-  background: #000;
+  background: #0045ab;
   color: #bbb;
   text-align: center;
-  font-size: 14px;
-  border-radius: 10px;
+  font-size: 19px;
 }
 
 
@@ -1074,14 +1073,14 @@ select {
 
 .about-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   border-radius: 16px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
 .about-content {
   flex: 1;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .about-content h2 {
